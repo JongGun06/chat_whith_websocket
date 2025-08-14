@@ -14,11 +14,11 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     SequelizeModule.forRoot({
       dialect: 'postgres',
-      host: 'localhost',
+      host: 'dpg-d2ekvdripnbc73a49dg0-a',
       port: 5432,
-      username: 'postgres',
-      password: 'root',
-      database: 'chat-project1', 
+      username: 'postgres_chat_test_user',
+      password: 'NC3aSZmwKyHdIk3h8ckuTgEJltAedouw',
+      database: 'postgres_chat_test', 
       models: [User,Chat,Message],
       autoLoadModels:true
     }),
