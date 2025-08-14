@@ -4,7 +4,7 @@ import {Server,Socket} from 'socket.io'
 import { createMessDto } from "./dto/create.message.dto";
 
 
-@WebSocketGateway(3112,{cors: {origin:'*'}})
+@WebSocketGateway({cors: {origin:'*'}})
 export class MessGateWay implements OnGatewayConnection,OnGatewayDisconnect {
     constructor(private messageService:MessageService){}
 
